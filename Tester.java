@@ -14,5 +14,19 @@ public class Tester {
 
       int[] c = new int[] {6, 1, 2, 3, 4, 5};
       Sorts.bubbleSort(c);
+
+      System.out.println();
+
+      //Empty array
+      int[] d = new int[] {};
+      Sorts.bubbleSort(d);
+      System.out.println(Arrays.toString(d));
+
+      System.out.println();
+
+      //Repetition
+      int[] e = new int[] {1, 2, 3, 3, 6, 5, 4};
+      Sorts.bubbleSort(e);
+      System.out.println(Arrays.toString(e));
   }
 }
