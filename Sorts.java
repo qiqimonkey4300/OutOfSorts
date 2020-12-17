@@ -7,16 +7,15 @@ public class Sorts{
   public static void bubbleSort(int[] data){
     boolean sorted = false;
     int temp = 0;
-    while(!sorted) {
+    for (int i = data.length; i > 0 && !sorted; i--) {
       sorted = true;
-      for (int i = 1; i < data.length; i++) {
-        if (data[i] < data[i - 1]) {
-          temp = data[i];
-          data[i] = data[i - 1];
-          data[i - 1] = temp;
+      for (int j = 1; j < i; j++) {
+        if (data[j] < data[j - 1]) {
+          temp = data[j];
+          data[j] = data[j - 1];
+          data[j - 1] = temp;
           sorted = false;
         }
-        //System.out.println(Arrays.toString(data));
       }
     }
   }
