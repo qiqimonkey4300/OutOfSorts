@@ -11,6 +11,11 @@ public class Tester {
       System.out.println(Arrays.toString(a1));
       Sorts.selectionSort(a1);
       System.out.println(Arrays.toString(a1));
+      System.out.println();
+      int[] a2 = new int[] {5, 1, 12, -5, 16};
+      System.out.println(Arrays.toString(a2));
+      Sorts.insertionSort(a2);
+      System.out.println(Arrays.toString(a2));
 
       System.out.println();
 
@@ -23,6 +28,11 @@ public class Tester {
       System.out.println(Arrays.toString(b1));
       Sorts.selectionSort(b1);
       System.out.println(Arrays.toString(b1));
+      System.out.println();
+      int[] b2 = new int[] {2, 3, 4, 5, 1};
+      System.out.println(Arrays.toString(b2));
+      Sorts.insertionSort(b2);
+      System.out.println(Arrays.toString(b2));
 
       System.out.println();
 
@@ -35,6 +45,11 @@ public class Tester {
       System.out.println(Arrays.toString(c1));
       Sorts.selectionSort(c1);
       System.out.println(Arrays.toString(c1));
+      System.out.println();
+      int[] c2 = new int[] {6, 1, 2, 3, 4, 5};
+      System.out.println(Arrays.toString(c2));
+      Sorts.insertionSort(c2);
+      System.out.println(Arrays.toString(c2));
 
       System.out.println();
 
@@ -48,6 +63,11 @@ public class Tester {
       System.out.println(Arrays.toString(d1));
       Sorts.selectionSort(d1);
       System.out.println(Arrays.toString(d1));
+      System.out.println();
+      int[] d2 = new int[] {};
+      System.out.println(Arrays.toString(d2));
+      Sorts.insertionSort(d2);
+      System.out.println(Arrays.toString(d2));
 
       System.out.println();
 
@@ -61,5 +81,10 @@ public class Tester {
       System.out.println(Arrays.toString(e1));
       Sorts.selectionSort(e1);
       System.out.println(Arrays.toString(e1));
+      System.out.println();
+      int[] e2 = new int[] {1, 2, 3, 3, 6, 5, 4};
+      System.out.println(Arrays.toString(e2));
+      Sorts.insertionSort(e2);
+      System.out.println(Arrays.toString(e2));
   }
 }
