@@ -19,4 +19,21 @@ public class Sorts{
       }
     }
   }
+
+  public static void selectionSort(int[] data) {
+    for (int i = 0; i < data.length; i++) {
+      int minIndex = i;
+      for (int j = i; j < data.length; j++) {
+        if (data[j] < data[minIndex]) {
+          minIndex = j;
+        }
+      }
+        //System.out.println(data[minIndex]);
+        int t = data[i];
+        data[i] = data[minIndex];
+        data[minIndex] = t;
+    }
+  }
+
+  //public static void insertionSort(int[] data) {  }
 }
