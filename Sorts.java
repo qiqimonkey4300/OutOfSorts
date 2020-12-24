@@ -37,7 +37,6 @@ public class Sorts{
   public static void insertionSort(int[] data) {
     int t = 0;
     for (int i = 1; i < data.length; i++) {
-      if (data[i] < data[i - 1]) {
         t = data[i];
         int j = i - 1;
         while (j >= 0 && data[j] > t) {
@@ -45,7 +44,6 @@ public class Sorts{
           j--;
         }
         data[j + 1] = t;
-      }
     }
   }
 }
